@@ -1,463 +1,694 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AniTec - Digital Platform for Livestock Management</title>
+    <meta name="description" content="AniTec is the leading digital platform in Latin America for livestock management. Manage health, reproduction, and productivity of your herd with innovative technology designed for ranchers and veterinarians." />
+    <meta name="keywords" content="livestock management, rancher platform, AniTec, livestock traceability, digital livestock, animal health, herd control, platform for veterinarians, rural technology, livestock organizer, cattle management, farm management, agricultural technology, agtech" />
+    <meta name="author" content="AniTec" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://anitec.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://anitec.com/" />
+    <meta property="og:title" content="AniTec - Digital Platform for Livestock Management" />
+    <meta property="og:description" content="AniTec is the leading digital platform in Latin America for livestock management. Manage health, reproduction, and productivity of your herd with innovative technology." />
+    <meta property="og:image" content="https://anitec.com/assets/images/og-image.png" />
+    <meta property="og:site_name" content="AniTec" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://anitec.com/" />
+    <meta property="twitter:title" content="AniTec - Digital Platform for Livestock Management" />
+    <meta property="twitter:description" content="AniTec is the leading digital platform in Latin America for livestock management. Manage health, reproduction, and productivity of your herd with innovative technology." />
+    <meta property="twitter:image" content="https://anitec.com/assets/images/og-image.png" />
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/images/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./assets/images/logo.png" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#79B267" />
+    <meta name="msapplication-TileColor" content="#79B267" />
+    
+    <!-- Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
-    <!-- TITTLE -->
-    <title>AniTec - Plataforma Digital para la Gestión del Ganado</title>
-
-    <!-- META TAGS -->
-    <meta name="description" content="AniTec es una plataforma accesible que permite a los ganaderos pequeños y medianos gestionar la salud, reproducción, y productividad de su ganado, optimizando procesos con tecnología innovadora.">
-    <meta name="keywords" content="gestión ganadera, plataforma ganaderos, AniTec, trazabilidad ganadera, ganadería digital, salud animal, control de ganado, plataforma para ganaderos, tecnología rural, organizador de ganado">
-    <meta name="author" content="AniTec">
-
-    <!-- MAIN ICON -->
-    <link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
-
-    <!-- STYLES -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <img src="assets/images/logo.png" alt="AniTec Logo">
-                <span class="logo-text">AniTec</span>
-            </a>
-            <ul class="nav-menu">
-                <li><a href="#features">Características</a></li>
-                <li><a href="#how-it-works">Cómo Funciona</a></li>
-                <li><a href="#testimonials">Testimonios</a></li>
-                <li><a href="#pricing">Precios</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button class="mobile-menu-btn">
-                    <i class="bi bi-list"></i>
-                </button>
-            </div>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="AniTec Logo" />
+          <span class="logo-text">AniTec</span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="nosotros.html">About Us</a></li>
+          <li><a href="ganaderos.html">Ranchers</a></li>
+          <li><a href="veterinarios.html">Veterinarians</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#pricing" class="btn btn-success btn-sm">Start Free</a>
+          <button class="mobile-menu-btn">
+            <i class="bi bi-list"></i>
+          </button>
         </div>
+      </div>
     </nav>
 
     <div class="mobile-menu-overlay"></div>
     <div class="mobile-menu">
-        <div class="mobile-menu-header">
-            <span style="font-weight: 700; font-size: 1.2rem; color: var(--primary-brown);">Menú</span>
-            <button class="mobile-menu-close">
-                <i class="bi bi-x-lg"></i>
-            </button>
-        </div>
-        <ul class="mobile-menu-links">
-            <li><a href="#features">Características</a></li>
-            <li><a href="#how-it-works">Cómo Funciona</a></li>
-            <li><a href="#testimonials">Testimonios</a></li>
-            <li><a href="#pricing">Precios</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-        <div class="mobile-menu-cta">
-            <a href="#pricing" class="btn btn-success">Comenzar Gratis</a>
-        </div>
+      <div class="mobile-menu-header">
+        <span
+          style="
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary-brown);
+          "
+          >Menu</span
+        >
+        <button class="mobile-menu-close">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <ul class="mobile-menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nosotros.html">About Us</a></li>
+        <li><a href="ganaderos.html">Ranchers</a></li>
+        <li><a href="veterinarios.html">Veterinarians</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <div class="mobile-menu-cta">
+        <a href="#pricing" class="btn btn-success">Start Free</a>
+      </div>
     </div>
 
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-badge">
-                        <i class="bi bi-check-circle-fill"></i>
-                        +500 Ganaderos ya confían en nosotros
-                    </div>
-                    <h1 class="hero-title">Gestiona tu <span>Ganado</span> con Tecnología Innovadora</h1>
-                    <p class="hero-description">
-                        AniTec es la plataforma digital que transformará la manera en que gestionas tu ganado.
-                        Controla la salud, reproducción y productividad de tu hato desde cualquier lugar,
-                        con herramientas fáciles diseñadas para pequeños y medianos ganaderos.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#pricing" class="btn btn-success">
-                            <i class="bi bi-rocket-takeoff"></i>
-                            Prueba Gratis
-                        </a>
-                        <a href="#how-it-works" class="btn btn-secondary">
-                            <i class="bi bi-play-circle"></i>
-                            Ver Demo
-                        </a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">+500</div>
-                            <div class="stat-label">Ganaderos</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">+5,000</div>
-                            <div class="stat-label">Animales Registrados</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">99%</div>
-                            <div class="stat-label">Satisfacción</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-image-wrapper">
-                    <img src="assets/images/hero-section.png" alt="AniTec Dashboard" class="hero-image">
-                    <div class="hero-floating-card hero-floating-card-1">
-                        <div class="floating-icon green">
-                            <i class="bi bi-check-lg"></i>
-                        </div>
-                        <div class="floating-text">
-                            <h4>Registro Exitoso</h4>
-                            <p>Animal cadastrado</p>
-                        </div>
-                    </div>
-                    <div class="hero-floating-card hero-floating-card-2">
-                        <div class="floating-icon brown">
-                            <i class="bi bi-graph-up-arrow"></i>
-                        </div>
-                        <div class="floating-text">
-                            <h4>Productividad</h4>
-                            <p>+25% este mes</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <i class="bi bi-check-circle-fill"></i>
+              +500 Ranchers and 120 Veterinarians trust us
             </div>
+            <h1 class="hero-title">
+              Manage your <span>Livestock</span> with Innovative Technology
+            </h1>
+            <p class="hero-description">
+              AniTec is the digital platform that will transform the way you
+              manage your livestock. Control the health, reproduction and
+              productivity of your herd from anywhere, with tools designed
+              specifically for <strong>ranchers</strong> and
+              <strong>veterinarians</strong>.
+            </p>
+            <div class="hero-buttons">
+              <a href="#pricing" class="btn btn-success">
+                <i class="bi bi-rocket-takeoff"></i>
+                Try Free
+              </a>
+              <a href="#features" class="btn btn-secondary">
+                <i class="bi bi-play-circle"></i>
+                Learn More
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-number">+500</div>
+                <div class="stat-label">Ranchers</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">+120</div>
+                <div class="stat-label">Veterinarians</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">+5,000</div>
+                <div class="stat-label">Registered Animals</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <img
+              src="assets/images/home/hero-section.png"
+              alt="AniTec Dashboard"
+              class="hero-image"
+            />
+            <div class="hero-floating-card hero-floating-card-1">
+              <div class="floating-icon green">
+                <i class="bi bi-check-lg"></i>
+              </div>
+              <div class="floating-text">
+                <h4>Successful Registration</h4>
+                <p>Animal registered</p>
+              </div>
+            </div>
+            <div class="hero-floating-card hero-floating-card-2">
+              <div class="floating-icon brown">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <div class="floating-text">
+                <h4>Productivity</h4>
+                <p>+25% this month</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="segmentos" id="segmentos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">
+            <i class="bi bi-people"></i>
+            Targeted to Two Segments
+          </span>
+          <h2 class="section-title">Designed for Ranchers and Veterinarians</h2>
+          <p class="section-description">
+            AniTec addresses the specific needs of each segment in the livestock
+            sector.
+          </p>
+        </div>
+        <div class="segmentos-grid">
+          <div class="segmento-card">
+            <div class="segmento-imagen">
+              <img src="assets/images/home/rancher.png" alt="Rancher" />
+            </div>
+            <h3 class="segmento-title">Ranchers</h3>
+            <p class="segmento-description">
+              Small and medium producers who need to digitize herd management,
+              from animal registration to economic control.
+            </p>
+            <a href="ganaderos.html" class="btn btn-secondary">
+              View Benefits <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+          <div class="segmento-card">
+            <div class="segmento-imagen">
+              <img
+                src="assets/images/home/veterinarian.png"
+                alt="Veterinarian"
+              />
+            </div>
+            <h3 class="segmento-title">Veterinarians</h3>
+            <p class="segmento-description">
+              Animal health professionals who need to manage the clinical
+              history of their patients and coordinate with ranchers.
+            </p>
+            <a href="veterinarios.html" class="btn btn-secondary">
+              View Benefits <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics" id="metrics">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">
+            <i class="bi bi-graph-up"></i>
+            Results That Speak
+          </span>
+          <h2 class="section-title">AniTec's Impact</h2>
+          <p class="section-description">
+            Join hundreds of producers who are already transforming their
+            livestock management.
+          </p>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon">
+              <i class="bi bi-file-earmark-check"></i>
+            </div>
+            <div class="metric-number">85%</div>
+            <div class="metric-label">Less Information Lost</div>
+            <p class="metric-description">
+              Digitize all your records and never lose important data again.
+            </p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <div class="metric-number">2h</div>
+            <div class="metric-label">Daily Time Saved</div>
+            <p class="metric-description">
+              Stop searching in notebooks. Find everything in seconds.
+            </p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <div class="metric-number">30%</div>
+            <div class="metric-label">More Productivity</div>
+            <p class="metric-description">
+              Automatic alerts that help you prevent losses.
+            </p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <div class="metric-number">100%</div>
+            <div class="metric-label">Complete Traceability</div>
+            <p class="metric-description">
+              Complies with regulations and access better markets.
+            </p>
+          </div>
+        </div>
+        <div class="metrics-footer">
+          <div class="metrics-stat">
+            <span class="metrics-stat-number">+500</span>
+            <span class="metrics-stat-label">Ranchers<br />trust AniTec</span>
+          </div>
+          <div class="metrics-stat">
+            <span class="metrics-stat-number">+120</span>
+            <span class="metrics-stat-label"
+              >Veterinarians<br />use the platform</span
+            >
+          </div>
+          <div class="metrics-stat">
+            <span class="metrics-stat-number">+5,000</span>
+            <span class="metrics-stat-label">Animals<br />registered</span>
+          </div>
+          <div class="metrics-stat">
+            <span class="metrics-stat-number">99%</span>
+            <span class="metrics-stat-label">User Satisfaction</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="features" id="features">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">
-                    <i class="bi bi-stars"></i>
-                    Características Principales
-                </span>
-                <h2 class="section-title">Todo lo que necesitas para gestionar tu ganado</h2>
-                <p class="section-description">
-                    Una plataforma completa con herramientas diseñadas para optimizar cada aspecto de tu gestión ganadera.
-                </p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="bi bi-heart-pulse"></i>
-                    </div>
-                    <h3 class="feature-title">Control Sanitario</h3>
-                    <p class="feature-description">
-                        Registra y controla todas las vaccaciones, tratamientos y eventos de salud de tu ganado.
-                        Recibe alertas automáticas para mantener a tu hato sano y protegido.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="bi bi-bag-heart"></i>
-                    </div>
-                    <h3 class="feature-title">Reproducción</h3>
-                    <p class="feature-description">
-                        Controla el ciclo reproductivo de tu ganado, registra partos, monta y destetes.
-                        Optimiza la genética de tu hato con herramientas de seguimiento genealógico.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="bi bi-cash-stack"></i>
-                    </div>
-                    <h3 class="feature-title">Gestión Económica</h3>
-                    <p class="feature-description">
-                        Controla tus gastos y ganancias. Genera reportes económicos detallados para tomar
-                        decisiones informadas sobre la rentabilidad de tu negocio ganadero.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="bi bi-qr-code"></i>
-                    </div>
-                    <h3 class="feature-title">Trazabilidad</h3>
-                    <p class="feature-description">
-                        Cada animal tiene su historial completo. Identifica mediante QR o código único
-                        para mantener una trazabilidad total desde el nacimiento hasta la venta.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="bi bi-bell"></i>
-                    </div>
-                    <h3 class="feature-title">Alertas Inteligentes</h3>
-                    <p class="feature-description">
-                        Recibe notificaciones automáticas sobre vaccaciones próximas, partos esperados
-                        y cualquier evento importante directamente en tu celular.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="bi bi-phone"></i>
-                    </div>
-                    <h3 class="feature-title">Acceso Móvil</h3>
-                    <p class="feature-description">
-                        Accede a tu plataforma desde tu celular o tablet en cualquier lugar.
-                        Funciona sin conexión donde la cobertura es limitada.
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">
+            <i class="bi bi-stars"></i>
+            Key Features
+          </span>
+          <h2 class="section-title">
+            Everything you need to manage your livestock
+          </h2>
+          <p class="section-description">
+            A complete platform with tools designed to optimize every aspect of
+            your livestock management.
+          </p>
         </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-heart-pulse"></i>
+            </div>
+            <h3 class="feature-title">Health Control</h3>
+            <p class="feature-description">
+              Register and control all vaccinations, treatments and health
+              events of your livestock. Receive automatic alerts to keep your
+              herd healthy and protected.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-bag-heart"></i>
+            </div>
+            <h3 class="feature-title">Reproduction</h3>
+            <p class="feature-description">
+              Control the reproductive cycle of your livestock, register births,
+              mating and weaning. Optimize your herd genetics with genealogy
+              tracking tools.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-cash-stack"></i>
+            </div>
+            <h3 class="feature-title">Economic Management</h3>
+            <p class="feature-description">
+              Control your expenses and earnings. Generate detailed economic
+              reports to make informed decisions about the profitability of your
+              livestock business.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-qr-code"></i>
+            </div>
+            <h3 class="feature-title">Traceability</h3>
+            <p class="feature-description">
+              Each animal has its complete history. Identify via QR or unique
+              code to maintain full traceability from birth to sale.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-bell"></i>
+            </div>
+            <h3 class="feature-title">Smart Alerts</h3>
+            <p class="feature-description">
+              Receive automatic notifications about upcoming vaccinations,
+              expected births and any important event directly on your phone.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-phone"></i>
+            </div>
+            <h3 class="feature-title">Mobile Access</h3>
+            <p class="feature-description">
+              Access your platform from your phone or tablet anywhere. Works
+              offline where coverage is limited.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="how-it-works" id="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">
-                    <i class="bi bi-signpost-2"></i>
-                    Fácil y Sencillo
-                </span>
-                <h2 class="section-title">¿Cómo comenzar con AniTec?</h2>
-                <p class="section-description">
-                    En solo 4 pasos tendrás toda tu gestión ganadera digitalizada y lista para usar.
-                </p>
-            </div>
-            <div class="steps-container">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <h3 class="step-title">Regístrate</h3>
-                    <p class="step-description">Crea tu cuenta en minutos sin costos ocultos</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <h3 class="step-title">Agrega tu Ganado</h3>
-                    <p class="step-description">Registra cada animal con sus datos básicos</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <h3 class="step-title">Registra Eventos</h3>
-                    <p class="step-description">Anota vaccaciones, tratamientos y más</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">4</div>
-                    <h3 class="step-title">Toma Decisiones</h3>
-                    <p class="step-description">Usa los reportes para mejorar tu producción</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">
+            <i class="bi bi-rocket-takeoff"></i>
+            Get Started Today
+          </span>
+          <h2 class="section-title">
+            Get started in minutes, no complications
+          </h2>
+          <p class="section-description">
+            You don't need to be a tech expert. Our interface is so easy that
+            you'll have everything digitized in no time.
+          </p>
         </div>
-    </section>
-
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">
-                    <i class="bi bi-people"></i>
-                    Testimonios
-                </span>
-                <h2 class="section-title">Lo que dicen nuestros usuarios</h2>
-                <p class="section-description">
-                    Descubre cómo AniTec ha transformado la gestión de cientos de ganaderos.
-                </p>
+        <div class="pasos-grid">
+          <div class="paso-card">
+            <div class="paso-numero">01</div>
+            <div class="paso-content">
+              <div class="paso-icon">
+                <i class="bi bi-person-add"></i>
+              </div>
+              <h3 class="paso-title">Create Your Account</h3>
+              <p class="paso-description">
+                Register with your email in less than 2 minutes. No credit card
+                required.
+              </p>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        "Desde que uso AniTec, tengo todo el control de mi ganado en la palma de mi mano.
-                        Ya no pierdo tiempo buscando registros en papel. La alerta de vaccaciones me ha salvado de varios problemas."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">MR</div>
-                        <div class="testimonial-info">
-                            <h4>Miguel Rodríguez</h4>
-                            <p>Ganadero, Costa Rica</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        "AniTec me ha permitido aumentar mi productividad en un 30%. El control reproductivo
-                        es excelente y puedo planificar mejor mis crías. Totalmente recomendado."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">LC</div>
-                        <div class="testimonial-info">
-                            <h4>Lucía Chen</h4>
-                            <p>Productora Lechera, Ecuador</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        "Lo mejor es la simplicidad. Mi papá que tiene 70 años aprende a usarlo sin problemas.
-                        Ahora toda la familia puede consultar el estado del ganado."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">GP</div>
-                        <div class="testimonial-info">
-                            <h4>Gabriel Pérez</h4>
-                            <p>Ganadero, Colombia</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="paso-arrow">
+              <i class="bi bi-arrow-right"></i>
             </div>
+          </div>
+          <div class="paso-card">
+            <div class="paso-numero">02</div>
+            <div class="paso-content">
+              <div class="paso-icon">
+                <i class="bi bi-house"></i>
+              </div>
+              <h3 class="paso-title">Add Your Livestock</h3>
+              <p class="paso-description">
+                Register each animal one by one or import data if you already
+                have it in Excel.
+              </p>
+            </div>
+            <div class="paso-arrow">
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+          <div class="paso-card">
+            <div class="paso-numero">03</div>
+            <div class="paso-content">
+              <div class="paso-icon">
+                <i class="bi bi-calendar-check"></i>
+              </div>
+              <h3 class="paso-title">Enable Alerts</h3>
+              <p class="paso-description">
+                Set reminders for vaccinations, births and treatments.
+              </p>
+            </div>
+            <div class="paso-arrow">
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+          <div class="paso-card">
+            <div class="paso-numero">04</div>
+            <div class="paso-content">
+              <div class="paso-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <h3 class="paso-title">Ready! Let's Grow</h3>
+              <p class="paso-description">
+                Receive reports and metrics to make better decisions.
+              </p>
+            </div>
+            <div class="paso-check">
+              <i class="bi bi-check-circle-fill"></i>
+            </div>
+          </div>
         </div>
+        <div class="how-it-works-cta">
+          <div class="how-it-works-cta-content">
+            <i class="bi bi-lightning-charge"></i>
+            <div>
+              <h4>Start Free Now</h4>
+              <p>No credit card required. Cancel anytime.</p>
+            </div>
+            <a href="#pricing" class="btn btn-success">Create Free Account</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="pricing" id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">
-                    <i class="bi bi-tag"></i>
-                    Planes Flexibles
-                </span>
-                <h2 class="section-title">Elige el plan ideal para ti</h2>
-                <p class="section-description">
-                    Planes diseñados para adaptarse a cualquier tamaño de operación ganadera.
-                </p>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-icon">
-                        <i class="bi bi-sun"></i>
-                    </div>
-                    <h3 class="pricing-title">Básico</h3>
-                    <div class="pricing-price">
-                        <span class="currency">$</span>
-                        <span class="amount">0</span>
-                        <span class="period">/mes</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="bi bi-check"></i> Hasta 50 animales</li>
-                        <li><i class="bi bi-check"></i> Registro básico</li>
-                        <li><i class="bi bi-check"></i> Alertas simples</li>
-                        <li><i class="bi bi-check"></i> Acceso web</li>
-                        <li><i class="bi bi-check"></i> Soporte por email</li>
-                    </ul>
-                    <a href="#" class="btn btn-secondary pricing-btn">Comenzar Gratis</a>
-                </div>
-                <div class="pricing-card featured">
-                    <div class="pricing-icon">
-                        <i class="bi bi-cloud-sun"></i>
-                    </div>
-                    <h3 class="pricing-title">Profesional</h3>
-                    <div class="pricing-price">
-                        <span class="currency">$</span>
-                        <span class="amount">19</span>
-                        <span class="period">/mes</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="bi bi-check"></i> Hasta 500 animales</li>
-                        <li><i class="bi bi-check"></i> Registros avanzados</li>
-                        <li><i class="bi bi-check"></i> Reportería completa</li>
-                        <li><i class="bi bi-check"></i> Acceso móvil</li>
-                        <li><i class="bi bi-check"></i> Soporte prioritario</li>
-                        <li><i class="bi bi-check"></i> Alertas automáticas</li>
-                    </ul>
-                    <a href="#" class="btn btn-success pricing-btn">Elegir Plan</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-icon">
-                        <i class="bi bi-lightning-charge"></i>
-                    </div>
-                    <h3 class="pricing-title">Empresarial</h3>
-                    <div class="pricing-price">
-                        <span class="currency">$</span>
-                        <span class="amount">49</span>
-                        <span class="period">/mes</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="bi bi-check"></i> Animales ilimitados</li>
-                        <li><i class="bi bi-check"></i> Múltiples usuarios</li>
-                        <li><i class="bi bi-check"></i> API Access</li>
-                        <li><i class="bi bi-check"></i> Personalización</li>
-                        <li><i class="bi bi-check"></i> Soporte 24/7</li>
-                        <li><i class="bi bi-check"></i> Capacitación incluida</li>
-                    </ul>
-                    <a href="#" class="btn btn-secondary pricing-btn">Contactar Ventas</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">
+            <i class="bi bi-tag"></i>
+            Flexible Plans
+          </span>
+          <h2 class="section-title">Choose the ideal plan for you</h2>
+          <p class="section-description">
+            No hidden costs. Cancel anytime. Start free today.
+          </p>
         </div>
-    </section>
-
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">¿Listo para transformar tu ganadería?</h2>
-                <p class="cta-description">
-                    Únete a más de 500 ganaderos que ya están optimizando su producción con AniTec.
-                    Comienza tu prueba gratis hoy, sin compromiso.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#pricing" class="btn btn-primary">
-                        <i class="bi bi-rocket-takeoff"></i>
-                        Comenzar Gratis
-                    </a>
-                    <a href="#" class="btn btn-secondary">
-                        <i class="bi bi-calendar"></i>
-                        Agendar Demo
-                    </a>
-                </div>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <div class="pricing-icon">
+                <i class="bi bi-sun"></i>
+              </div>
+              <h3 class="pricing-title">Basic</h3>
+              <p class="pricing-description">
+                Perfect to start digitizing your livestock
+              </p>
             </div>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="amount">0</span>
+              <span class="period">/month</span>
+            </div>
+            <span class="pricing-price-note">Free forever</span>
+            <ul class="pricing-features">
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Up to <strong>50 animals</strong></span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Basic animal registration</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Simple vaccine alerts</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Basic web access</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Email support</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-outline pricing-btn">Start Free</a>
+          </div>
+          <div class="pricing-card featured">
+            <div class="pricing-badge">
+              <i class="bi bi-star-fill"></i>
+              Most Popular
+            </div>
+            <div class="pricing-header">
+              <div class="pricing-icon">
+                <i class="bi bi-cloud-sun"></i>
+              </div>
+              <h3 class="pricing-title">Professional</h3>
+              <p class="pricing-description">
+                For ranchers looking for productivity
+              </p>
+            </div>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="amount">19</span>
+              <span class="period">/month</span>
+            </div>
+            <span class="pricing-price-note"
+              >Save $228/year with annual billing</span
+            >
+            <ul class="pricing-features">
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Up to <strong>500 animals</strong></span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Advanced records with photos</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Reporting and dashboards</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Full mobile app</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Priority support</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Automatic alerts</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-success pricing-btn">Choose Plan</a>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <div class="pricing-icon">
+                <i class="bi bi-lightning-charge"></i>
+              </div>
+              <h3 class="pricing-title">Enterprise</h3>
+              <p class="pricing-description">For large-scale operations</p>
+            </div>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="amount">49</span>
+              <span class="period">/month</span>
+            </div>
+            <span class="pricing-price-note"
+              >Price per herd up to 5,000 animals</span
+            >
+            <ul class="pricing-features">
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span><strong>Unlimited animals</strong></span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Multiple users and roles</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Full API access</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Field customization</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>24/7 dedicated support</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Training included</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-outline pricing-btn">Contact Sales</a>
+          </div>
         </div>
+        <div class="pricing-footer">
+          <p>
+            <i class="bi bi-shield-check"></i>
+            All plans include data encryption and automatic backup
+          </p>
+        </div>
+      </div>
     </section>
 
     <footer id="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <a href="#" class="logo">
-                        <img src="assets/images/logo.png" alt="AniTec Logo">
-                        <span class="logo-text">AniTec</span>
-                    </a>
-                    <p class="footer-description">
-                        AniTec es la plataforma digital líder en Latinoamérica para la gestión ganadera.
-                        Ayudamos a pequeños y medianos productores a optimizar sus operaciones
-                        con tecnología innovadora y fácil de usar.
-                    </p>
-                    <div class="footer-social">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h4 class="footer-title">Producto</h4>
-                    <ul class="footer-links">
-                        <li><a href="#features">Características</a></li>
-                        <li><a href="#pricing">Precios</a></li>
-                        <li><a href="#">Demo</a></li>
-                        <li><a href="#">Actualizaciones</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4 class="footer-title">Empresa</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4 class="footer-title">Soporte</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Centro de Ayuda</a></li>
-                        <li><a href="#">Documentación</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Comunidad</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="AniTec Logo" />
+              <span class="logo-text">AniTec</span>
+            </a>
+            <p class="footer-description">
+              AniTec is the leading digital platform in Latin America for
+              livestock management. We help small and medium producers and
+              veterinarians optimize their operations with innovative and
+              easy-to-use technology.
+            </p>
+            <div class="footer-social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
             </div>
-            <div class="footer-bottom">
-                <p class="footer-copyright">© 2024 AniTec. Todos los derechos reservados.</p>
-                <div class="footer-legal">
-                    <a href="#">Política de Privacidad</a>
-                    <a href="#">Términos de Servicio</a>
-                    <a href="#">Cookies</a>
-                </div>
-            </div>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Product</h4>
+            <ul class="footer-links">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="ganaderos.html">For Ranchers</a></li>
+              <li><a href="veterinarios.html">For Veterinarians</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="nosotros.html">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">© 2026 AniTec. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
