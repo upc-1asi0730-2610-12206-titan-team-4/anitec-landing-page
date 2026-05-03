@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-page="ranchers">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,14 +60,18 @@
           <span class="logo-text">AniTec</span>
         </a>
         <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="nosotros.html">About Us</a></li>
-          <li><a href="ganaderos.html" class="active">Ranchers</a></li>
-          <li><a href="veterinarios.html">Veterinarians</a></li>
-          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="nosotros.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="ganaderos.html" class="active" data-i18n="nav.ranchers">Ranchers</a></li>
+          <li><a href="veterinarios.html" data-i18n="nav.veterinarians">Veterinarians</a></li>
+          <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
         </ul>
         <div class="nav-actions">
-          <a href="index.html#pricing" class="btn btn-success btn-sm"
+          <div class="lang-switcher">
+            <button class="lang-btn" id="lang-en" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn" id="lang-es" onclick="setLanguage('es')">ES</button>
+          </div>
+          <a href="index.html#pricing" class="btn btn-success btn-sm" data-i18n="nav.startFree"
             >Start Free</a
           >
           <button class="mobile-menu-btn">
@@ -86,21 +90,25 @@
             font-size: 1.2rem;
             color: var(--primary-brown);
           "
-          >Menu</span
+          data-i18n="nav.menu">Menu</span
         >
         <button class="mobile-menu-close">
           <i class="bi bi-x-lg"></i>
         </button>
       </div>
       <ul class="mobile-menu-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="nosotros.html">About Us</a></li>
-        <li><a href="ganaderos.html">Ranchers</a></li>
-        <li><a href="veterinarios.html">Veterinarians</a></li>
-        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="nosotros.html" data-i18n="nav.about">About Us</a></li>
+        <li><a href="ganaderos.html" data-i18n="nav.ranchers">Ranchers</a></li>
+        <li><a href="veterinarios.html" data-i18n="nav.veterinarians">Veterinarians</a></li>
+        <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
       </ul>
       <div class="mobile-menu-cta">
-        <a href="index.html#pricing" class="btn btn-success">Start Free</a>
+        <a href="index.html#pricing" class="btn btn-success" data-i18n="nav.startFree">Start Free</a>
+      </div>
+      <div class="mobile-lang-switcher">
+        <button class="lang-btn" id="mobile-lang-en" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" id="mobile-lang-es" onclick="setLanguage('es')">ES</button>
       </div>
     </div>
 
@@ -110,12 +118,12 @@
           <div class="ganadero-hero-text">
             <div class="hero-badge">
               <i class="bi bi-award"></i>
-              #1 Solution in Latin America
+              <span data-i18n="ranchers.heroBadge">#1 Solution in Latin America</span>
             </div>
             <h1 class="ganadero-title">
-              Digitize Your<span class="highlight"> Livestock</span> Today
+              <span data-i18n="ranchers.heroTitle1">Digitize Your</span><span class="highlight" data-i18n="ranchers.heroTitle2"> Livestock</span><span data-i18n="ranchers.heroTitle3"> Today</span>
             </h1>
-            <p class="ganadero-description">
+            <p class="ganadero-description" data-i18n="ranchers.heroDesc">
               AniTec is the platform designed specifically for
               <strong>small and medium ranchers</strong> that seek
               to digitize their management without complications. Forget about the
@@ -124,45 +132,45 @@
             <div class="ganadero-features">
               <div class="ganadero-feature">
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Unlimited animal records</span>
+                <span data-i18n="ranchers.feat1">Unlimited animal records</span>
               </div>
               <div class="ganadero-feature">
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Automatic vaccine alerts</span>
+                <span data-i18n="ranchers.feat2">Automatic vaccine alerts</span>
               </div>
               <div class="ganadero-feature">
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Detailed financial reports</span>
+                <span data-i18n="ranchers.feat3">Detailed financial reports</span>
               </div>
               <div class="ganadero-feature">
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Complete reproduction control</span>
+                <span data-i18n="ranchers.feat4">Complete reproduction control</span>
               </div>
             </div>
             <div class="ganadero-hero-stats">
               <div class="ganadero-stat">
                 <span class="ganadero-stat-number">+500</span>
-                <span class="ganadero-stat-label">Ranchers<br />trust</span>
+                <span class="ganadero-stat-label" data-i18n="ranchers.stat1">Ranchers<br />trust</span>
               </div>
               <div class="ganadero-stat">
                 <span class="ganadero-stat-number">+5,000</span>
-                <span class="ganadero-stat-label"
+                <span class="ganadero-stat-label" data-i18n="ranchers.stat2"
                   >Animals<br />registered</span
                 >
               </div>
               <div class="ganadero-stat">
                 <span class="ganadero-stat-number">30%</span>
-                <span class="ganadero-stat-label">More<br />productivity</span>
+                <span class="ganadero-stat-label" data-i18n="ranchers.stat3">More<br />productivity</span>
               </div>
             </div>
             <div class="ganadero-buttons">
               <a href="#beneficios" class="btn btn-success">
                 <i class="bi bi-arrow-down"></i>
-                View Benefits
+                <span data-i18n="ranchers.viewBenefits">View Benefits</span>
               </a>
               <a href="index.html#pricing" class="btn btn-secondary">
                 <i class="bi bi-rocket-takeoff"></i>
-                Try Free
+                <span data-i18n="ranchers.tryFree">Try Free</span>
               </a>
             </div>
           </div>
@@ -174,7 +182,7 @@
               />
               <div class="hero-image-badge">
                 <i class="bi bi-star-fill"></i>
-                <span>4.9/5 rating</span>
+                <span data-i18n="ranchers.rate">4.9/5 rating</span>
               </div>
             </div>
           </div>
@@ -187,10 +195,10 @@
         <div class="section-header">
           <span class="section-subtitle">
             <i class="bi bi-gift"></i>
-            Exclusive Benefits
+            <span data-i18n="ranchers.benefitsSubtitle">Exclusive Benefits</span>
           </span>
-          <h2 class="section-title">Why AniTec for Ranchers?</h2>
-          <p class="section-description">
+          <h2 class="section-title" data-i18n="ranchers.benefitsTitle">Why AniTec for Ranchers?</h2>
+          <p class="section-description" data-i18n="ranchers.benefitsDesc">
             Discover how AniTec can transform the way you manage your ranching operation.
           </p>
         </div>
@@ -199,9 +207,9 @@
             <div class="beneficio-icon">
               <i class="bi bi-qr-code"></i>
             </div>
-            <h3>Individual Records</h3>
-            <p>
-              Identify each animal with a unique QR code. Record breed, age,
+            <h3 data-i18n="ranchers.benef1Title">Individual Records</h3>
+            <p data-i18n="ranchers.benef1Desc">
+              Identify each animal with a unique ID code. Record breed, age,
               gender, weight, vaccines and more. Perfectly organized.
             </p>
           </div>
@@ -209,8 +217,8 @@
             <div class="beneficio-icon">
               <i class="bi bi-calendar-heart"></i>
             </div>
-            <h3>Health Calendar</h3>
-            <p>
+            <h3 data-i18n="ranchers.benef2Title">Health Calendar</h3>
+            <p data-i18n="ranchers.benef2Desc">
               Schedule vaccines, treatments and deworming. Receive automatic alerts so you don't miss any important date.
             </p>
           </div>
@@ -218,8 +226,8 @@
             <div class="beneficio-icon">
               <i class="bi bi-heart-pulse"></i>
             </div>
-            <h3>Health Control</h3>
-            <p>
+            <h3 data-i18n="ranchers.benef3Title">Health Control</h3>
+            <p data-i18n="ranchers.benef3Desc">
               Keep the complete medical history of each animal. Record
               diagnoses, treatments and medications administered.</p>
             </p>
@@ -228,8 +236,8 @@
             <div class="beneficio-icon">
               <i class="bi bi-bag-heart"></i>
             </div>
-            <h3>Controlled Reproduction</h3>
-            <p>
+            <h3 data-i18n="ranchers.benef4Title">Controlled Reproduction</h3>
+            <p data-i18n="ranchers.benef4Desc">
               Record births, breedings and weanings. Control the genealogy of your
               herd and improve the genetics of your livestock.</p>
             </p>
@@ -238,8 +246,8 @@
             <div class="beneficio-icon">
               <i class="bi bi-cash-stack"></i>
             </div>
-            <h3>Economic Management</h3>
-            <p>
+            <h3 data-i18n="ranchers.benef5Title">Economic Management</h3>
+            <p data-i18n="ranchers.benef5Desc">
               Control income and expenses. Generate financial reports to make better decisions.
             </p>
           </div>
@@ -247,8 +255,8 @@
             <div class="beneficio-icon">
               <i class="bi bi-graph-up-arrow"></i>
             </div>
-            <h3>Reports and Statistics</h3>
-            <p>
+            <h3 data-i18n="ranchers.benef6Title">Reports and Statistics</h3>
+            <p data-i18n="ranchers.benef6Desc">
               Visualize the evolution of your herd. Identify patterns and improve your
               productivity.
             </p>
@@ -262,10 +270,10 @@
         <div class="section-header">
           <span class="section-subtitle-light">
             <i class="bi bi-chat-quote"></i>
-            Real Testimonials
+            <span data-i18n="ranchers.testimonialSubtitle">Real Testimonials</span>
           </span>
-          <h2 class="section-title-light">What Ranchers Say</h2>
-          <p class="section-description-light">
+          <h2 class="section-title-light" data-i18n="ranchers.testimonialTitle">What Ranchers Say</h2>
+          <p class="section-description-light" data-i18n="ranchers.testimonialDesc">
             More than 500 ranchers trust AniTec to digitize their management.
           </p>
         </div>
@@ -273,12 +281,12 @@
             <div class="testimonios-slider-track" id="testimoniosSlider">
                 <div class="testimonio-card">
                     <i class="bi bi-quote"></i>
-                    <p>"Since using AniTec, I have all my livestock under control in the palm of my hand. Vaccination alerts have saved me from several problems."</p>
+                    <p data-i18n="testimonials.t1">"Since using AniTec, I have all my livestock under control in the palm of my hand. Vaccination alerts have saved me from several problems."</p>
                     <div class="testimonio-autor">
                         <img src="assets/images/ranchers/people/person_1.png" alt="Carlos Mendoza">
                         <div class="testimonio-info">
-                            <h4>Carlos Mendoza</h4>
-                            <p>Rancher, Peru</p>
+                            <h4 data-i18n="testimonials.t1Name">Carlos Mendoza</h4>
+                            <p data-i18n="testimonials.t1Title">Rancher, Peru</p>
                             <div class="testimonio-estrellas">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
@@ -291,12 +299,12 @@
                 </div>
                 <div class="testimonio-card">
                     <i class="bi bi-quote"></i>
-                    <p>"AniTec has allowed me to increase my productivity by 30%. The reproductive control is excellent and I can plan my breedings better."</p>
+                    <p data-i18n="testimonials.t2">"AniTec has allowed me to increase my productivity by 30%. The reproductive control is excellent and I can plan my breedings better."</p>
                     <div class="testimonio-autor">
                         <img src="assets/images/ranchers/people/person_2.png" alt="Maria Gonzalez">
                         <div class="testimonio-info">
-                            <h4>María González</h4>
-                            <p>Dairy Producer, Ecuador</p>
+                            <h4 data-i18n="testimonials.t2Name">María González</h4>
+                            <p data-i18n="testimonials.t2Title">Dairy Producer, Ecuador</p>
                             <div class="testimonio-estrellas">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
@@ -309,12 +317,12 @@
                 </div>
                 <div class="testimonio-card">
                     <i class="bi bi-quote"></i>
-                    <p>"The best part is the simplicity. My dad who is 70 years old learned to use it without problems. Now the whole family can check."</p>
+                    <p data-i18n="testimonials.t3">"The best part is the simplicity. My dad who is 70 years old learned to use it without problems. Now the whole family can check."</p>
                     <div class="testimonio-autor">
                         <img src="assets/images/ranchers/people/person_3.png" alt="Pedro Ramirez">
                         <div class="testimonio-info">
-                            <h4>Pedro Ramírez</h4>
-                            <p>Rancher, Colombia</p>
+                            <h4 data-i18n="testimonials.t3Name">Pedro Ramírez</h4>
+                            <p data-i18n="testimonials.t3Title">Rancher, Colombia</p>
                             <div class="testimonio-estrellas">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
@@ -327,12 +335,12 @@
                 </div>
                 <div class="testimonio-card">
                     <i class="bi bi-quote"></i>
-                    <p>"Before I constantly lost information. Now everything is organized and vaccine alerts are my salvation every season."</p>
+                    <p data-i18n="testimonials.t4">"Before I constantly lost information. Now everything is organized and vaccine alerts are my salvation every season."</p>
                     <div class="testimonio-autor">
                         <img src="assets/images/ranchers/people/person_4.png" alt="Jose Luis Torres">
                         <div class="testimonio-info">
-                            <h4>José Luis Torres</h4>
-                            <p>Rancher, Mexico</p>
+                            <h4 data-i18n="testimonials.t4Name">José Luis Torres</h4>
+                            <p data-i18n="testimonials.t4Title">Rancher, Mexico</p>
                             <div class="testimonio-estrellas">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
@@ -345,12 +353,12 @@
                 </div>
                 <div class="testimonio-card">
                     <i class="bi bi-quote"></i>
-                    <p>"Thanks to the economic reports I can see exactly my earnings and expenses. AniTec helps me make better decisions."</p>
+                    <p data-i18n="testimonials.t5">"Thanks to the economic reports I can see exactly my earnings and expenses. AniTec helps me make better decisions."</p>
                     <div class="testimonio-autor">
                         <img src="assets/images/ranchers/people/person_5.png" alt="Roberto Sanchez">
                         <div class="testimonio-info">
-                            <h4>Roberto Sánchez</h4>
-                            <p>Producer, Chile</p>
+                            <h4 data-i18n="testimonials.t5Name">Roberto Sánchez</h4>
+                            <p data-i18n="testimonials.t5Title">Producer, Chile</p>
                             <div class="testimonio-estrellas">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
@@ -363,12 +371,12 @@
                 </div>
                 <div class="testimonio-card">
                     <i class="bi bi-quote"></i>
-                    <p>"The reproduction control is incredible. I can track the genealogy of each animal and improve the genetics of my herd."</p>
+                    <p data-i18n="testimonials.t6">"The reproduction control is incredible. I can track the genealogy of each animal and improve the genetics of my herd."</p>
                     <div class="testimonio-autor">
                         <img src="assets/images/ranchers/people/person_6.png" alt="Antonio Vargas">
                         <div class="testimonio-info">
-                            <h4>Antonio Vargas</h4>
-                            <p>Rancher, Argentina</p>
+                            <h4 data-i18n="testimonials.t6Name">Antonio Vargas</h4>
+                            <p data-i18n="testimonials.t6Title">Rancher, Argentina</p>
                             <div class="testimonio-estrellas">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
@@ -394,9 +402,9 @@
         <div class="section-header">
           <span class="section-subtitle">
             <i class="bi bi-grid"></i>
-            Specialized Modules
+            <span data-i18n="ranchers.modulesTitle">Specialized Modules</span>
           </span>
-          <h2 class="section-title">Everything you can manage</h2>
+          <h2 class="section-title" data-i18n="ranchers.modulesTitle">Everything you can manage</h2>
         </div>
         <div class="modulos-grid">
           <div class="modulo-card">
@@ -406,27 +414,27 @@
                 alt="Animal Management"
               />
               <div class="modulo-overlay">
-                <span>Animal Management</span>
+                <span data-i18n="ranchers.mod1Title">Animal Management</span>
               </div>
             </div>
-            <h3>Animal Management</h3>
-            <p>
+            <h3 data-i18n="ranchers.mod1Title">Animal Management</h3>
+            <p data-i18n="ranchers.mod1Desc">
               Total control of your livestock: unlimited records, identification
-              with QR, complete history and advanced search.
+              with ID, complete history and advanced search.
             </p>
             <ul>
               <li>
-                <i class="bi bi-check-circle-fill"></i> Individual record per
-                animal
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat1">Individual record per
+                animal</span>
               </li>
               <li>
-                <i class="bi bi-check-circle-fill"></i> QR identification
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat2">ID identification</span>
               </li>
               <li>
-                <i class="bi bi-check-circle-fill"></i> Complete history
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat3">Complete history</span>
               </li>
               <li>
-                <i class="bi bi-check-circle-fill"></i> Filtering and search
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat4">Filtering and search</span>
               </li>
             </ul>
           </div>
@@ -437,24 +445,24 @@
                 alt="Health Control"
               />
               <div class="modulo-overlay">
-                <span>Health Control</span>
+                <span data-i18n="ranchers.mod2Title">Health Control</span>
               </div>
             </div>
-            <h3>Health Control</h3>
-            <p>
+            <h3 data-i18n="ranchers.mod2Title">Health Control</h3>
+            <p data-i18n="ranchers.mod2Desc">
               Keep your herd healthy with vaccine calendars, automatic alerts and treatment tracking.
             </p>
             <ul>
               <li>
-                <i class="bi bi-check-circle-fill"></i> Vaccine calendar
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat5">Vaccine calendar</span>
               </li>
               <li>
-                <i class="bi bi-check-circle-fill"></i> Treatment records
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat6">Treatment records</span>
               </li>
               <li>
-                <i class="bi bi-check-circle-fill"></i> Automatic alerts
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat7">Automatic alerts</span>
               </li>
-              <li><i class="bi bi-check-circle-fill"></i> Medical history</li>
+              <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat8">Medical history</span></li>
             </ul>
           </div>
           <div class="modulo-card">
@@ -464,22 +472,22 @@
                 alt="Reproduction"
               />
               <div class="modulo-overlay">
-                <span>Reproduction</span>
+                <span data-i18n="ranchers.mod3Title">Reproduction</span>
               </div>
             </div>
-            <h3>Reproduction</h3>
-            <p>
+            <h3 data-i18n="ranchers.mod3Title">Reproduction</h3>
+            <p data-i18n="ranchers.mod3Desc">
               Optimize your herd genetics with birth control, breeding tracking and detailed genealogy.
             </p>
             <ul>
-              <li><i class="bi bi-check-circle-fill"></i> Birth control</li>
+              <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat9">Birth control</span></li>
               <li>
-                <i class="bi bi-check-circle-fill"></i> Breeding tracking
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat10">Breeding tracking</span>
               </li>
               <li>
-                <i class="bi bi-check-circle-fill"></i> Herd genealogy
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat11">Herd genealogy</span>
               </li>
-              <li><i class="bi bi-check-circle-fill"></i> Weanings</li>
+              <li><i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat12">Weanings</span></li>
             </ul>
           </div>
           <div class="modulo-card">
@@ -489,25 +497,25 @@
                 alt="Economic Management"
               />
               <div class="modulo-overlay">
-                <span>Economic Management</span>
+                <span data-i18n="ranchers.mod4Title">Economic Management</span>
               </div>
             </div>
-            <h3>Economic Management</h3>
-            <p>
+            <h3 data-i18n="ranchers.mod4Title">Economic Management</h3>
+            <p data-i18n="ranchers.mod4Desc">
               Detailed financial reports to make better decisions and analyze the profitability of your business.
             </p>
             <ul>
               <li>
-                <i class="bi bi-check-circle-fill"></i> Income records
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat13">Income records</span>
               </li>
               <li>
-                <i class="bi bi-check-circle-fill"></i> Expense records
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat14">Expense records</span>
               </li>
               <li>
-                <i class="bi bi-check-circle-fill"></i> Financial reports
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat15">Financial reports</span>
               </li>
               <li>
-                <i class="bi bi-check-circle-fill"></i> Profitability analysis
+                <i class="bi bi-check-circle-fill"></i> <span data-i18n="ranchers.modFeat16">Profitability analysis</span>
               </li>
             </ul>
           </div>
@@ -520,10 +528,10 @@
         <div class="section-header">
           <span class="section-subtitle">
             <i class="bi bi-bar-chart"></i>
-            Traditional vs AniTec
+            <span data-i18n="ranchers.compSubtitle">Traditional vs AniTec</span>
           </span>
-          <h2 class="section-title">Why digitize?</h2>
-          <p class="section-description">
+          <h2 class="section-title" data-i18n="ranchers.compTitle">Why digitize?</h2>
+          <p class="section-description" data-i18n="ranchers.compDesc">
             Discover how AniTec transforms your ranching management
           </p>
         </div>
@@ -531,89 +539,89 @@
           <div class="comparacion-card comparacion-traditional">
             <div class="comparacion-card-header">
               <i class="bi bi-journal"></i>
-              <h3>Traditional Method</h3>
-              <p>The conventional approach</p>
+              <h3 data-i18n="ranchers.tradTitle">Traditional Method</h3>
+              <p data-i18n="ranchers.tradDesc">The conventional approach</p>
             </div>
 <ul class="comparacion-list">
               <li>
                 <i class="bi bi-x-circle-fill"></i>
-                <span
+                <span data-i18n="ranchers.trad1"
                   >Records in notebooks or papers that get lost or damaged</span>
               </li>
               <li>
                 <i class="bi bi-x-circle-fill"></i>
-                <span>Vaccine alerts depend on memory</span>
+                <span data-i18n="ranchers.trad2">Vaccine alerts depend on memory</span>
               </li>
               <li>
                 <i class="bi bi-x-circle-fill"></i>
-                <span>Limited traceability and difficult to follow</span>
+                <span data-i18n="ranchers.trad3">Limited traceability and difficult to follow</span>
               </li>
               <li>
                 <i class="bi bi-x-circle-fill"></i>
-                <span>Information accessible only from the farm</span>
+                <span data-i18n="ranchers.trad4">Information accessible only from the farm</span>
               </li>
               <li>
                 <i class="bi bi-x-circle-fill"></i>
-                <span>Manual reports that take time</span>
+                <span data-i18n="ranchers.trad5">Manual reports that take time</span>
               </li>
               <li>
                 <i class="bi bi-x-circle-fill"></i>
-                <span>Difficult to share information with veterinarians</span>
+                <span data-i18n="ranchers.trad6">Difficult to share information with veterinarians</span>
               </li>
               <li>
                 <i class="bi bi-x-circle-fill"></i>
-                <span>No backup of information in case of loss</span>
+                <span data-i18n="ranchers.trad7">No backup of information in case of loss</span>
               </li>
               <li>
                 <i class="bi bi-x-circle-fill"></i>
-                <span>Decisions based on imprecise estimates</span>
+                <span data-i18n="ranchers.trad8">Decisions based on imprecise estimates</span>
               </li>
             </ul>
           </div>
 <div class="comparacion-card comparacion-anitec">
             <div class="comparacion-card-header">
               <i class="bi bi-cpu"></i>
-              <h3>With AniTec</h3>
-              <p>The intelligent digital solution</p>
-              <span class="comparacion-badge">Recommended</span>
+              <h3 data-i18n="ranchers.anitecTitle">With AniTec</h3>
+              <p data-i18n="ranchers.anitecDesc">The intelligent digital solution</p>
+              <span class="comparacion-badge" data-i18n="ranchers.anitecBadge">Recommended</span>
             </div>
             <ul class="comparacion-list">
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span
+                <span data-i18n="ranchers.a1"
                   >Unlimited digital records with cloud backup</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span
+                <span data-i18n="ranchers.a2"
                   >Automatic notifications for each vaccine and
                   treatment</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span
+                <span data-i18n="ranchers.a3"
                   >Complete traceability from birth to
                   sale</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span
+                <span data-i18n="ranchers.a4"
                   >Access from anywhere with your phone or
                   computer</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Automatic reports generated instantly</span>
+                <span data-i18n="ranchers.a5">Automatic reports generated instantly</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Real-time synchronization with veterinarians</span>
+                <span data-i18n="ranchers.a6">Real-time synchronization with veterinarians</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span
+                <span data-i18n="ranchers.a7"
                   >Dashboards with real metrics for intelligent
-                  decisions</span
+                  decisions</span>
                 >
               </li>
             </ul>
@@ -622,19 +630,19 @@
         <div class="comparacion-stats">
           <div class="stat-item">
             <span class="stat-number">85%</span>
-            <span class="stat-label">Time reduction in records</span>
+            <span class="stat-label" data-i18n="ranchers.statRed">Time reduction in records</span>
           </div>
           <div class="stat-item">
             <span class="stat-number">100%</span>
-            <span class="stat-label">Herd traceability</span>
+            <span class="stat-label" data-i18n="ranchers.statTrace">Herd traceability</span>
           </div>
           <div class="stat-item">
             <span class="stat-number">30%</span>
-            <span class="stat-label">Increase in productivity</span>
+            <span class="stat-label" data-i18n="ranchers.statProd">Increase in productivity</span>
           </div>
           <div class="stat-item">
             <span class="stat-number">24/7</span>
-            <span class="stat-label">Access from anywhere</span>
+            <span class="stat-label" data-i18n="ranchers.statAccess">Access from anywhere</span>
           </div>
         </div>
       </div>
@@ -652,37 +660,37 @@
         <div class="cta-content">
           <div class="cta-badge">
             <i class="bi bi-stars"></i>
-            Free Trial - No Credit Card
+            <span data-i18n="ranchers.ctaBadge">Free Trial - No Credit Card</span>
           </div>
-          <h2 class="cta-title">Ready to professionalize your ranch?</h2>
-          <p class="cta-description">
+          <h2 class="cta-title" data-i18n="ranchers.ctaTitle">Ready to professionalize your ranch?</h2>
+          <p class="cta-description" data-i18n="ranchers.ctaDesc">
             Join more than 500 ranchers who are already optimizing their production with AniTec. Start your free trial today and transform the way you manage your livestock.
           </p>
           <div class="cta-features">
             <div class="cta-feature">
               <i class="bi bi-check-circle-fill"></i>
-              <span>No payment commitment</span>
+              <span data-i18n="ranchers.ctaFeat1">No payment commitment</span>
             </div>
             <div class="cta-feature">
               <i class="bi bi-check-circle-fill"></i>
-              <span>Setup in 5 minutes</span>
+              <span data-i18n="ranchers.ctaFeat2">Setup in 5 minutes</span>
             </div>
             <div class="cta-feature">
               <i class="bi bi-check-circle-fill"></i>
-              <span>24/7 support in English</span>
+              <span data-i18n="ranchers.ctaFeat3">24/7 support in English</span>
             </div>
           </div>
           <div class="cta-buttons">
             <a href="index.html#pricing" class="btn btn-primary">
               <i class="bi bi-rocket-takeoff"></i>
-              Start Free Now
+              <span data-i18n="ranchers.startFree">Start Free Now</span>
             </a>
             <a href="nosotros.html" class="btn btn-outline-light">
               <i class="bi bi-play-circle"></i>
-              See How It Works
+              <span data-i18n="ranchers.seeHow">See How It Works</span>
             </a>
           </div>
-          <p class="cta-note">
+          <p class="cta-note" data-i18n="ranchers.ctaNote">
             <i class="bi bi-shield-check"></i>
             Your information is secure. We never share your data.
           </p>
@@ -698,8 +706,9 @@
               <img src="assets/images/logo.png" alt="AniTec Logo" />
               <span class="logo-text">AniTec</span>
             </a>
-            <p class="footer-description">
-              AniTec is the leading digital platform in Latin America for ranching management. We help small and medium producers optimize their operations.
+            <p class="footer-description" data-i18n="footer.desc">
+              AniTec is the leading digital platform in Latin America for
+              ranching management. We help small and medium producers optimize their operations.
             </p>
             <div class="footer-social">
               <a href="#"><i class="bi bi-facebook"></i></a>
@@ -710,45 +719,46 @@
             </div>
           </div>
           <div class="footer-column">
-            <h4 class="footer-title">Product</h4>
+            <h4 class="footer-title" data-i18n="footer.product">Product</h4>
             <ul class="footer-links">
-              <li><a href="index.html#features">Features</a></li>
-              <li><a href="index.html#pricing">Pricing</a></li>
-              <li><a href="ganaderos.html">For Ranchers</a></li>
-              <li><a href="veterinarios.html">For Veterinarians</a></li>
+              <li><a href="index.html#features" data-i18n="footer.features">Features</a></li>
+              <li><a href="index.html#pricing" data-i18n="footer.pricing">Pricing</a></li>
+              <li><a href="ganaderos.html" data-i18n="footer.forRanchers">For Ranchers</a></li>
+              <li><a href="veterinarios.html" data-i18n="footer.forVets">For Veterinarians</a></li>
             </ul>
           </div>
           <div class="footer-column">
-            <h4 class="footer-title">Company</h4>
+            <h4 class="footer-title" data-i18n="footer.company">Company</h4>
             <ul class="footer-links">
-              <li><a href="nosotros.html">About Us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="nosotros.html" data-i18n="footer.about">About Us</a></li>
+              <li><a href="#" data-i18n="footer.blog">Blog</a></li>
+              <li><a href="#contact" data-i18n="footer.contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-column">
-            <h4 class="footer-title">Support</h4>
+            <h4 class="footer-title" data-i18n="footer.support">Support</h4>
             <ul class="footer-links">
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Documentation</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Community</a></li>
+              <li><a href="#" data-i18n="footer.helpCenter">Help Center</a></li>
+              <li><a href="#" data-i18n="footer.documentation">Documentation</a></li>
+              <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+              <li><a href="#" data-i18n="footer.community">Community</a></li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <p class="footer-copyright">
+          <p class="footer-copyright" data-i18n="footer.copyright">
             © 2026 AniTec. All rights reserved.
           </p>
           <div class="footer-legal">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookies</a>
+            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="#" data-i18n="footer.terms">Terms of Service</a>
+            <a href="#" data-i18n="footer.cookies">Cookies</a>
           </div>
         </div>
       </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

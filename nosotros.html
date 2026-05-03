@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-page="about">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,14 +60,18 @@
           <span class="logo-text">AniTec</span>
         </a>
         <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="nosotros.html" class="active">About Us</a></li>
-          <li><a href="ganaderos.html">Ranchers</a></li>
-          <li><a href="veterinarios.html">Veterinarians</a></li>
-          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="nosotros.html" class="active" data-i18n="nav.about">About Us</a></li>
+          <li><a href="ganaderos.html" data-i18n="nav.ranchers">Ranchers</a></li>
+          <li><a href="veterinarios.html" data-i18n="nav.veterinarians">Veterinarians</a></li>
+          <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
         </ul>
         <div class="nav-actions">
-          <a href="index.html#pricing" class="btn btn-success btn-sm"
+          <div class="lang-switcher">
+            <button class="lang-btn" id="lang-en" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn" id="lang-es" onclick="setLanguage('es')">ES</button>
+          </div>
+          <a href="index.html#pricing" class="btn btn-success btn-sm" data-i18n="nav.startFree"
             >Start Free</a
           >
           <button class="mobile-menu-btn">
@@ -86,21 +90,25 @@
             font-size: 1.2rem;
             color: var(--primary-brown);
           "
-          >Menu</span
+          data-i18n="nav.menu">Menu</span
         >
         <button class="mobile-menu-close">
           <i class="bi bi-x-lg"></i>
         </button>
       </div>
       <ul class="mobile-menu-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="nosotros.html">About Us</a></li>
-        <li><a href="ganaderos.html">Ranchers</a></li>
-        <li><a href="veterinarios.html">Veterinarians</a></li>
-        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="nosotros.html" data-i18n="nav.about">About Us</a></li>
+        <li><a href="ganaderos.html" data-i18n="nav.ranchers">Ranchers</a></li>
+        <li><a href="veterinarios.html" data-i18n="nav.veterinarians">Veterinarians</a></li>
+        <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
       </ul>
       <div class="mobile-menu-cta">
-        <a href="index.html#pricing" class="btn btn-success">Start Free</a>
+        <a href="index.html#pricing" class="btn btn-success" data-i18n="nav.startFree">Start Free</a>
+      </div>
+      <div class="mobile-lang-switcher">
+        <button class="lang-btn" id="mobile-lang-en" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" id="mobile-lang-es" onclick="setLanguage('es')">ES</button>
       </div>
     </div>
 
@@ -110,19 +118,19 @@
           <div class="nosotros-hero-text">
             <div class="hero-badge">
               <i class="bi bi-rocket-takeoff"></i>
-              AniTec Founders
+              <span data-i18n="about.heroBadge">AniTec Founders</span>
             </div>
             <h1 class="nosotros-title">
-              Transforming<span class="highlight"> Ranching</span>
+              <span data-i18n="about.heroTitle1">Transforming</span><span class="highlight" data-i18n="about.heroTitle2"> Ranching</span>
             </h1>
-            <p class="nosotros-description">
+            <p class="nosotros-description" data-i18n="about.heroDesc1">
               We are <strong>Titan</strong>, a team of Software Engineering
               students from the
               <strong>Peruvian University of Applied Sciences (UPC)</strong>,
               passionate about transforming Latin American ranching through
               accessible and innovative technology.
             </p>
-            <p class="nosotros-description">
+            <p class="nosotros-description" data-i18n="about.heroDesc2">
               We were born with a clear mission:
               <strong>to digitize and optimize ranching management</strong> in
               Latin America, enabling small and medium producers to improve
@@ -131,29 +139,29 @@
             <div class="nosotros-hero-stats">
               <div class="hero-stat">
                 <span class="hero-stat-number">2026</span>
-                <span class="hero-stat-label">Foundation<br />Year</span>
+                <span class="hero-stat-label" data-i18n="about.stat1">Foundation<br />Year</span>
               </div>
               <div class="hero-stat">
                 <span class="hero-stat-number">5</span>
-                <span class="hero-stat-label">Team<br />Members</span>
+                <span class="hero-stat-label" data-i18n="about.stat2">Team<br />Members</span>
               </div>
               <div class="hero-stat">
                 <span class="hero-stat-number">1</span>
-                <span class="hero-stat-label">Product<br />Created</span>
+                <span class="hero-stat-label" data-i18n="about.stat3">Product<br />Created</span>
               </div>
               <div class="hero-stat">
                 <span class="hero-stat-number">+500</span>
-                <span class="hero-stat-label">Current<br />Users</span>
+                <span class="hero-stat-label" data-i18n="about.stat4">Current<br />Users</span>
               </div>
             </div>
             <div class="nosotros-hero-buttons">
               <a href="#equipo" class="btn btn-success">
                 <i class="bi bi-people"></i>
-                Meet the Team
+                <span data-i18n="about.meetTeam">Meet the Team</span>
               </a>
               <a href="index.html#pricing" class="btn btn-secondary">
                 <i class="bi bi-rocket-takeoff"></i>
-                View Plans
+                <span data-i18n="about.viewPlans">View Plans</span>
               </a>
             </div>
           </div>
@@ -168,8 +176,8 @@
               </video>
             </div>
             <div class="video-info">
-              <h4>Learn our story</h4>
-              <p>
+              <h4 data-i18n="about.ourStory">Learn our story</h4>
+              <p data-i18n="about.ourStoryDesc">
                 Discover how we were born and our vision to transform ranching
               </p>
             </div>
@@ -183,10 +191,10 @@
         <div class="section-header">
           <span class="section-subtitle">
             <i class="bi bi-compass"></i>
-            Our Essence
+            <span data-i18n="about.essenceSubtitle">Our Essence</span>
           </span>
-          <h2 class="section-title">What Defines Us</h2>
-          <p class="section-description">
+          <h2 class="section-title" data-i18n="about.essenceTitle">What Defines Us</h2>
+          <p class="section-description" data-i18n="about.essenceDesc">
             Learn the fundamental pillars that guide our daily work.
           </p>
         </div>
@@ -204,7 +212,7 @@
               src="assets/images/about-us/logo_producto_anitec.png"
               alt="AniTec Product"
             />
-            <span class="mv-logo-label">AniTec Product</span>
+            <span class="mv-logo-label" data-i18n="about.product">AniTec Product</span>
           </div>
         </div>
         <div class="mv-grid">
@@ -213,8 +221,8 @@
               <i class="bi bi-bullseye"></i>
             </div>
             <div class="mv-card-number">01</div>
-            <h3>Mission</h3>
-            <p>
+            <h3 data-i18n="about.mission">Mission</h3>
+            <p data-i18n="about.missionText">
               Revolutionize livestock management and traceability in small and
               medium ranches in Latin America, through an accessible digital
               platform that optimizes productive, sanitary, and economic
@@ -226,8 +234,8 @@
               <i class="bi bi-eye"></i>
             </div>
             <div class="mv-card-number">02</div>
-            <h3>Vision</h3>
-            <p>
+            <h3 data-i18n="about.vision">Vision</h3>
+            <p data-i18n="about.visionText">
               To be the leading platform for digital transformation in ranching
               in Latin America, empowering thousands of producers with
               accessible and innovative technology for a more sustainable
@@ -239,16 +247,16 @@
               <i class="bi bi-heart"></i>
             </div>
             <div class="mv-card-number">03</div>
-            <h3>Values</h3>
+            <h3 data-i18n="about.values">Values</h3>
             <ul class="mv-valores">
               <li>
-                <i class="bi bi-lightning-charge"></i> Technological Innovation
+                <i class="bi bi-lightning-charge"></i> <span data-i18n="about.val1">Technological Innovation</span>
               </li>
               <li>
-                <i class="bi bi-universal-access"></i> Accessibility for All
+                <i class="bi bi-universal-access"></i> <span data-i18n="about.val2">Accessibility for All</span>
               </li>
-              <li><i class="bi bi-people"></i> Commitment to the Field</li>
-              <li><i class="bi bi-arrow-repeat"></i> Continuous Improvement</li>
+              <li><i class="bi bi-people"></i> <span data-i18n="about.val3">Commitment to the Field</span></li>
+              <li><i class="bi bi-arrow-repeat"></i> <span data-i18n="about.val4">Continuous Improvement</span></li>
             </ul>
           </div>
         </div>
@@ -260,10 +268,10 @@
         <div class="section-header">
           <span class="section-subtitle">
             <i class="bi bi-people"></i>
-            The Team
+            <span data-i18n="about.teamSubtitle">The Team</span>
           </span>
-          <h2 class="section-title">Meet the Creators</h2>
-          <p class="section-description">
+          <h2 class="section-title" data-i18n="about.teamTitle">Meet the Creators</h2>
+          <p class="section-description" data-i18n="about.teamDesc">
             We are Software Engineering students from UPC, united by a vision:
             transforming Latin American ranching.
           </p>
@@ -281,10 +289,10 @@
               </div>
             </div>
             <div class="equipo-info">
-              <span class="equipo-rol">Team Leader</span>
+              <span class="equipo-rol" data-i18n="about.teamRole1">Team Leader</span>
               <h3 class="equipo-nombre">Luciana Celeste Sanchez Silva</h3>
               <p class="equipo-codigo">U202215979</p>
-              <p class="equipo-bio">
+              <p class="equipo-bio" data-i18n="about.bio1">
                 Passionate about UX/UI design. Natural leader with excellent
                 communication and teamwork skills.
               </p>
@@ -302,10 +310,10 @@
               </div>
             </div>
             <div class="equipo-info">
-              <span class="equipo-rol">Full Stack Developer</span>
+              <span class="equipo-rol" data-i18n="about.teamRole2">Full Stack Developer</span>
               <h3 class="equipo-nombre">Josep Eliu Melgarejo Quiroz</h3>
               <p class="equipo-codigo">U202315165</p>
-              <p class="equipo-bio">
+              <p class="equipo-bio" data-i18n="about.bio2">
                 Passionate about creating modern and efficient technological
                 solutions. Expert in full stack web development.
               </p>
@@ -323,10 +331,10 @@
               </div>
             </div>
             <div class="equipo-info">
-              <span class="equipo-rol">Frontend Developer</span>
+              <span class="equipo-rol" data-i18n="about.teamRole3">Frontend Developer</span>
               <h3 class="equipo-nombre">Abigail Nadhim Raymundo Villarroel</h3>
               <p class="equipo-codigo">U202318001</p>
-              <p class="equipo-bio">
+              <p class="equipo-bio" data-i18n="about.bio3">
                 Specialist in creating attractive and functional interfaces.
                 Passionate about responsive web design.
               </p>
@@ -344,10 +352,10 @@
               </div>
             </div>
             <div class="equipo-info">
-              <span class="equipo-rol">Backend Developer</span>
+              <span class="equipo-rol" data-i18n="about.teamRole4">Backend Developer</span>
               <h3 class="equipo-nombre">Bruno Aldair Huaman Gallardo</h3>
               <p class="equipo-codigo">U202117762</p>
-              <p class="equipo-bio">
+              <p class="equipo-bio" data-i18n="about.bio4">
                 Specialist in APIs and databases. Mastery of .NET and SQL Server
                 technologies.
               </p>
@@ -365,10 +373,10 @@
               </div>
             </div>
             <div class="equipo-info">
-              <span class="equipo-rol">Backend Developer</span>
+              <span class="equipo-rol" data-i18n="about.teamRole5">Backend Developer</span>
               <h3 class="equipo-nombre">Jorge Brayan Ayala Fernandez</h3>
               <p class="equipo-codigo">U20241C030</p>
-              <p class="equipo-bio">
+              <p class="equipo-bio" data-i18n="about.bio5">
                 Versatile developer with experience in multiple technologies and
                 development platforms.
               </p>
@@ -379,10 +387,10 @@
           <div class="equipo-cta-content">
             <i class="bi bi-lightbulb"></i>
             <div>
-              <h4>Do you have an idea?</h4>
-              <p>We are always open to new collaborations and ideas.</p>
+              <h4 data-i18n="about.ideaTitle">Do you have an idea?</h4>
+              <p data-i18n="about.ideaDesc">We are always open to new collaborations and ideas.</p>
             </div>
-            <a href="#contact" class="btn btn-success">Contact Us</a>
+            <a href="#contact" class="btn btn-success" data-i18n="about.contactUs">Contact Us</a>
           </div>
         </div>
       </div>
@@ -396,10 +404,11 @@
               <img src="assets/images/logo.png" alt="AniTec Logo" />
               <span class="logo-text">AniTec</span>
             </a>
-            <p class="footer-description">
+            <p class="footer-description" data-i18n="footer.desc">
               AniTec is the leading digital platform in Latin America for
-              ranching management. We help small and medium producers and
-              veterinarians optimize their operations.
+              livestock management. We help small and medium producers and
+              veterinarians optimize their operations with innovative and
+              easy-to-use technology.
             </p>
             <div class="footer-social">
               <a href="#"><i class="bi bi-facebook"></i></a>
@@ -410,43 +419,44 @@
             </div>
           </div>
           <div class="footer-column">
-            <h4 class="footer-title">Product</h4>
+            <h4 class="footer-title" data-i18n="footer.product">Product</h4>
             <ul class="footer-links">
-              <li><a href="index.html#features">Features</a></li>
-              <li><a href="index.html#pricing">Pricing</a></li>
-              <li><a href="ganaderos.html">For Ranchers</a></li>
-              <li><a href="veterinarios.html">For Veterinarians</a></li>
+              <li><a href="index.html#features" data-i18n="footer.features">Features</a></li>
+              <li><a href="index.html#pricing" data-i18n="footer.pricing">Pricing</a></li>
+              <li><a href="ganaderos.html" data-i18n="footer.forRanchers">For Ranchers</a></li>
+              <li><a href="veterinarios.html" data-i18n="footer.forVets">For Veterinarians</a></li>
             </ul>
           </div>
           <div class="footer-column">
-            <h4 class="footer-title">Company</h4>
+            <h4 class="footer-title" data-i18n="footer.company">Company</h4>
             <ul class="footer-links">
-              <li><a href="nosotros.html">About Us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="nosotros.html" data-i18n="footer.about">About Us</a></li>
+              <li><a href="#" data-i18n="footer.blog">Blog</a></li>
+              <li><a href="#contact" data-i18n="footer.contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-column">
-            <h4 class="footer-title">Support</h4>
+            <h4 class="footer-title" data-i18n="footer.support">Support</h4>
             <ul class="footer-links">
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Documentation</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Community</a></li>
+              <li><a href="#" data-i18n="footer.helpCenter">Help Center</a></li>
+              <li><a href="#" data-i18n="footer.documentation">Documentation</a></li>
+              <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+              <li><a href="#" data-i18n="footer.community">Community</a></li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <p class="footer-copyright">© 2026 AniTec. All rights reserved.</p>
+          <p class="footer-copyright" data-i18n="footer.copyright">© 2026 AniTec. All rights reserved.</p>
           <div class="footer-legal">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookies</a>
+            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="#" data-i18n="footer.terms">Terms of Service</a>
+            <a href="#" data-i18n="footer.cookies">Cookies</a>
           </div>
         </div>
       </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

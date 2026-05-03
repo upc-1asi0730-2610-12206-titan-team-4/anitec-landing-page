@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-page="home">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,14 +58,18 @@
           <span class="logo-text">AniTec</span>
         </a>
         <ul class="nav-menu">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="nosotros.html">About Us</a></li>
-          <li><a href="ganaderos.html">Ranchers</a></li>
-          <li><a href="veterinarios.html">Veterinarians</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+          <li><a href="nosotros.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="ganaderos.html" data-i18n="nav.ranchers">Ranchers</a></li>
+          <li><a href="veterinarios.html" data-i18n="nav.veterinarians">Veterinarians</a></li>
+          <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
         </ul>
         <div class="nav-actions">
-          <a href="#pricing" class="btn btn-success btn-sm">Start Free</a>
+          <div class="lang-switcher">
+            <button class="lang-btn" id="lang-en" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn" id="lang-es" onclick="setLanguage('es')">ES</button>
+          </div>
+          <a href="#pricing" class="btn btn-success btn-sm" data-i18n="nav.startFree">Start Free</a>
           <button class="mobile-menu-btn">
             <i class="bi bi-list"></i>
           </button>
@@ -82,21 +86,25 @@
             font-size: 1.2rem;
             color: var(--primary-brown);
           "
-          >Menu</span
+          data-i18n="nav.menu">Menu</span
         >
         <button class="mobile-menu-close">
           <i class="bi bi-x-lg"></i>
         </button>
       </div>
       <ul class="mobile-menu-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="nosotros.html">About Us</a></li>
-        <li><a href="ganaderos.html">Ranchers</a></li>
-        <li><a href="veterinarios.html">Veterinarians</a></li>
-        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="nosotros.html" data-i18n="nav.about">About Us</a></li>
+        <li><a href="ganaderos.html" data-i18n="nav.ranchers">Ranchers</a></li>
+        <li><a href="veterinarios.html" data-i18n="nav.veterinarians">Veterinarians</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
       </ul>
       <div class="mobile-menu-cta">
-        <a href="#pricing" class="btn btn-success">Start Free</a>
+        <a href="#pricing" class="btn btn-success" data-i18n="nav.startFree">Start Free</a>
+      </div>
+      <div class="mobile-lang-switcher">
+        <button class="lang-btn" id="mobile-lang-en" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" id="mobile-lang-es" onclick="setLanguage('es')">ES</button>
       </div>
     </div>
 
@@ -106,12 +114,12 @@
           <div class="hero-text">
             <div class="hero-badge">
               <i class="bi bi-check-circle-fill"></i>
-              +500 Ranchers and 120 Veterinarians trust us
+              <span data-i18n="hero.badge">+500 Ranchers and 120 Veterinarians trust us</span>
             </div>
             <h1 class="hero-title">
-              Manage your <span>Livestock</span> with Innovative Technology
+              <span data-i18n="hero.title1">Manage your </span><span data-i18n="hero.title2" class="highlight">Livestock</span><span data-i18n="hero.title3"> with Innovative Technology</span>
             </h1>
-            <p class="hero-description">
+            <p class="hero-description" data-i18n="hero.description">
               AniTec is the digital platform that will transform the way you
               manage your livestock. Control the health, reproduction and
               productivity of your herd from anywhere, with tools designed
@@ -121,25 +129,25 @@
             <div class="hero-buttons">
               <a href="#pricing" class="btn btn-success">
                 <i class="bi bi-rocket-takeoff"></i>
-                Try Free
+                <span data-i18n="hero.tryFree">Try Free</span>
               </a>
               <a href="#features" class="btn btn-secondary">
                 <i class="bi bi-play-circle"></i>
-                Learn More
+                <span data-i18n="hero.learnMore">Learn More</span>
               </a>
             </div>
             <div class="hero-stats">
               <div class="stat-item">
                 <div class="stat-number">+500</div>
-                <div class="stat-label">Ranchers</div>
+                <div class="stat-label" data-i18n="hero.stat1">Ranchers</div>
               </div>
               <div class="stat-item">
                 <div class="stat-number">+120</div>
-                <div class="stat-label">Veterinarians</div>
+                <div class="stat-label" data-i18n="hero.stat2">Veterinarians</div>
               </div>
               <div class="stat-item">
                 <div class="stat-number">+5,000</div>
-                <div class="stat-label">Registered Animals</div>
+                <div class="stat-label" data-i18n="hero.stat3">Registered Animals</div>
               </div>
             </div>
           </div>
@@ -154,8 +162,8 @@
                 <i class="bi bi-check-lg"></i>
               </div>
               <div class="floating-text">
-                <h4>Successful Registration</h4>
-                <p>Animal registered</p>
+                <h4 data-i18n="hero.statsAd1" >Successful Registration</h4>
+                <p data-i18n="hero.statsAd2" >Animal registered</p>
               </div>
             </div>
             <div class="hero-floating-card hero-floating-card-2">
@@ -163,8 +171,8 @@
                 <i class="bi bi-graph-up-arrow"></i>
               </div>
               <div class="floating-text">
-                <h4>Productivity</h4>
-                <p>+25% this month</p>
+                <h4 data-i18n="hero.statsAd3" >Productivity</h4>
+                <p data-i18n="hero.statsAd4" >+25% this month</p>
               </div>
             </div>
           </div>
@@ -177,10 +185,10 @@
         <div class="section-header">
           <span class="section-subtitle">
             <i class="bi bi-people"></i>
-            Targeted to Two Segments
+            <span data-i18n="segments.subtitle">Targeted to Two Segments</span>
           </span>
-          <h2 class="section-title">Designed for Ranchers and Veterinarians</h2>
-          <p class="section-description">
+          <h2 class="section-title" data-i18n="segments.title">Designed for Ranchers and Veterinarians</h2>
+          <p class="section-description" data-i18n="segments.description">
             AniTec addresses the specific needs of each segment in the livestock
             sector.
           </p>
@@ -190,13 +198,13 @@
             <div class="segmento-imagen">
               <img src="assets/images/home/rancher.png" alt="Rancher" />
             </div>
-            <h3 class="segmento-title">Ranchers</h3>
-            <p class="segmento-description">
+            <h3 class="segmento-title" data-i18n="segments.ranchersTitle">Ranchers</h3>
+            <p class="segmento-description" data-i18n="segments.ranchersDesc">
               Small and medium producers who need to digitize herd management,
               from animal registration to economic control.
             </p>
             <a href="ganaderos.html" class="btn btn-secondary">
-              View Benefits <i class="bi bi-arrow-right"></i>
+              <span data-i18n="segments.viewBenefits">View Benefits</span> <i class="bi bi-arrow-right"></i>
             </a>
           </div>
           <div class="segmento-card">
@@ -206,13 +214,13 @@
                 alt="Veterinarian"
               />
             </div>
-            <h3 class="segmento-title">Veterinarians</h3>
-            <p class="segmento-description">
+            <h3 class="segmento-title" data-i18n="segments.vetsTitle">Veterinarians</h3>
+            <p class="segmento-description" data-i18n="segments.vetsDesc">
               Animal health professionals who need to manage the clinical
               history of their patients and coordinate with ranchers.
             </p>
             <a href="veterinarios.html" class="btn btn-secondary">
-              View Benefits <i class="bi bi-arrow-right"></i>
+              <span data-i18n="segments.viewBenefits">View Benefits</span> <i class="bi bi-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -224,10 +232,10 @@
         <div class="section-header">
           <span class="section-subtitle">
             <i class="bi bi-graph-up"></i>
-            Results That Speak
+            <span data-i18n="metrics.subtitle">Results That Speak</span>
           </span>
-          <h2 class="section-title">AniTec's Impact</h2>
-          <p class="section-description">
+          <h2 class="section-title" data-i18n="metrics.title">AniTec's Impact</h2>
+          <p class="section-description" data-i18n="metrics.description">
             Join hundreds of producers who are already transforming their
             livestock management.
           </p>
@@ -238,8 +246,8 @@
               <i class="bi bi-file-earmark-check"></i>
             </div>
             <div class="metric-number">85%</div>
-            <div class="metric-label">Less Information Lost</div>
-            <p class="metric-description">
+            <div class="metric-label" data-i18n="metrics.label1">Less Information Lost</div>
+            <p class="metric-description" data-i18n="metrics.desc1">
               Digitize all your records and never lose important data again.
             </p>
           </div>
@@ -248,8 +256,8 @@
               <i class="bi bi-clock-history"></i>
             </div>
             <div class="metric-number">2h</div>
-            <div class="metric-label">Daily Time Saved</div>
-            <p class="metric-description">
+            <div class="metric-label" data-i18n="metrics.label2">Daily Time Saved</div>
+            <p class="metric-description" data-i18n="metrics.desc2">
               Stop searching in notebooks. Find everything in seconds.
             </p>
           </div>
@@ -258,8 +266,8 @@
               <i class="bi bi-graph-up-arrow"></i>
             </div>
             <div class="metric-number">30%</div>
-            <div class="metric-label">More Productivity</div>
-            <p class="metric-description">
+            <div class="metric-label" data-i18n="metrics.label3">More Productivity</div>
+            <p class="metric-description" data-i18n="metrics.desc3">
               Automatic alerts that help you prevent losses.
             </p>
           </div>
@@ -268,8 +276,8 @@
               <i class="bi bi-shield-check"></i>
             </div>
             <div class="metric-number">100%</div>
-            <div class="metric-label">Complete Traceability</div>
-            <p class="metric-description">
+            <div class="metric-label" data-i18n="metrics.label4">Complete Traceability</div>
+            <p class="metric-description" data-i18n="metrics.desc4">
               Complies with regulations and access better markets.
             </p>
           </div>
@@ -277,21 +285,21 @@
         <div class="metrics-footer">
           <div class="metrics-stat">
             <span class="metrics-stat-number">+500</span>
-            <span class="metrics-stat-label">Ranchers<br />trust AniTec</span>
+            <span class="metrics-stat-label" data-i18n="metrics.stat1">Ranchers<br />trust AniTec</span>
           </div>
           <div class="metrics-stat">
             <span class="metrics-stat-number">+120</span>
-            <span class="metrics-stat-label"
+            <span class="metrics-stat-label" data-i18n="metrics.stat2"
               >Veterinarians<br />use the platform</span
             >
           </div>
           <div class="metrics-stat">
             <span class="metrics-stat-number">+5,000</span>
-            <span class="metrics-stat-label">Animals<br />registered</span>
+            <span class="metrics-stat-label" data-i18n="metrics.stat3">Animals<br />registered</span>
           </div>
           <div class="metrics-stat">
             <span class="metrics-stat-number">99%</span>
-            <span class="metrics-stat-label">User Satisfaction</span>
+            <span class="metrics-stat-label" data-i18n="metrics.stat4">User Satisfaction</span>
           </div>
         </div>
       </div>
@@ -302,12 +310,12 @@
         <div class="section-header">
           <span class="section-subtitle">
             <i class="bi bi-stars"></i>
-            Key Features
+            <span data-i18n="features.subtitle">Key Features</span>
           </span>
-          <h2 class="section-title">
+          <h2 class="section-title" data-i18n="features.title">
             Everything you need to manage your livestock
           </h2>
-          <p class="section-description">
+          <p class="section-description" data-i18n="features.description">
             A complete platform with tools designed to optimize every aspect of
             your livestock management.
           </p>
@@ -317,8 +325,8 @@
             <div class="feature-icon">
               <i class="bi bi-heart-pulse"></i>
             </div>
-            <h3 class="feature-title">Health Control</h3>
-            <p class="feature-description">
+            <h3 class="feature-title" data-i18n="features.healthTitle">Health Control</h3>
+            <p class="feature-description" data-i18n="features.healthDesc">
               Register and control all vaccinations, treatments and health
               events of your livestock. Receive automatic alerts to keep your
               herd healthy and protected.
@@ -328,8 +336,8 @@
             <div class="feature-icon">
               <i class="bi bi-bag-heart"></i>
             </div>
-            <h3 class="feature-title">Reproduction</h3>
-            <p class="feature-description">
+            <h3 class="feature-title" data-i18n="features.reproTitle">Reproduction</h3>
+            <p class="feature-description" data-i18n="features.reproDesc">
               Control the reproductive cycle of your livestock, register births,
               mating and weaning. Optimize your herd genetics with genealogy
               tracking tools.
@@ -339,8 +347,8 @@
             <div class="feature-icon">
               <i class="bi bi-cash-stack"></i>
             </div>
-            <h3 class="feature-title">Economic Management</h3>
-            <p class="feature-description">
+            <h3 class="feature-title" data-i18n="features.economicTitle">Economic Management</h3>
+            <p class="feature-description" data-i18n="features.economicDesc">
               Control your expenses and earnings. Generate detailed economic
               reports to make informed decisions about the profitability of your
               livestock business.
@@ -350,8 +358,8 @@
             <div class="feature-icon">
               <i class="bi bi-qr-code"></i>
             </div>
-            <h3 class="feature-title">Traceability</h3>
-            <p class="feature-description">
+            <h3 class="feature-title" data-i18n="features.traceTitle">Traceability</h3>
+            <p class="feature-description" data-i18n="features.traceDesc">
               Each animal has its complete history. Identify via QR or unique
               code to maintain full traceability from birth to sale.
             </p>
@@ -360,8 +368,8 @@
             <div class="feature-icon">
               <i class="bi bi-bell"></i>
             </div>
-            <h3 class="feature-title">Smart Alerts</h3>
-            <p class="feature-description">
+            <h3 class="feature-title" data-i18n="features.alertsTitle">Smart Alerts</h3>
+            <p class="feature-description" data-i18n="features.alertsDesc">
               Receive automatic notifications about upcoming vaccinations,
               expected births and any important event directly on your phone.
             </p>
@@ -370,8 +378,8 @@
             <div class="feature-icon">
               <i class="bi bi-phone"></i>
             </div>
-            <h3 class="feature-title">Mobile Access</h3>
-            <p class="feature-description">
+            <h3 class="feature-title" data-i18n="features.mobileTitle">Mobile Access</h3>
+            <p class="feature-description" data-i18n="features.mobileDesc">
               Access your platform from your phone or tablet anywhere. Works
               offline where coverage is limited.
             </p>
@@ -385,12 +393,12 @@
         <div class="section-header">
           <span class="section-subtitle">
             <i class="bi bi-rocket-takeoff"></i>
-            Get Started Today
+            <span data-i18n="howItWorks.subtitle">Get Started Today</span>
           </span>
-          <h2 class="section-title">
+          <h2 class="section-title" data-i18n="howItWorks.title">
             Get started in minutes, no complications
           </h2>
-          <p class="section-description">
+          <p class="section-description" data-i18n="howItWorks.description">
             You don't need to be a tech expert. Our interface is so easy that
             you'll have everything digitized in no time.
           </p>
@@ -402,8 +410,8 @@
               <div class="paso-icon">
                 <i class="bi bi-person-add"></i>
               </div>
-              <h3 class="paso-title">Create Your Account</h3>
-              <p class="paso-description">
+              <h3 class="paso-title" data-i18n="howItWorks.step1Title">Create Your Account</h3>
+              <p class="paso-description" data-i18n="howItWorks.step1Desc">
                 Register with your email in less than 2 minutes. No credit card
                 required.
               </p>
@@ -418,8 +426,8 @@
               <div class="paso-icon">
                 <i class="bi bi-house"></i>
               </div>
-              <h3 class="paso-title">Add Your Livestock</h3>
-              <p class="paso-description">
+              <h3 class="paso-title" data-i18n="howItWorks.step2Title">Add Your Livestock</h3>
+              <p class="paso-description" data-i18n="howItWorks.step2Desc">
                 Register each animal one by one or import data if you already
                 have it in Excel.
               </p>
@@ -434,8 +442,8 @@
               <div class="paso-icon">
                 <i class="bi bi-calendar-check"></i>
               </div>
-              <h3 class="paso-title">Enable Alerts</h3>
-              <p class="paso-description">
+              <h3 class="paso-title" data-i18n="howItWorks.step3Title">Enable Alerts</h3>
+              <p class="paso-description" data-i18n="howItWorks.step3Desc">
                 Set reminders for vaccinations, births and treatments.
               </p>
             </div>
@@ -449,8 +457,8 @@
               <div class="paso-icon">
                 <i class="bi bi-graph-up"></i>
               </div>
-              <h3 class="paso-title">Ready! Let's Grow</h3>
-              <p class="paso-description">
+              <h3 class="paso-title" data-i18n="howItWorks.step4Title">Ready! Let's Grow</h3>
+              <p class="paso-description" data-i18n="howItWorks.step4Desc">
                 Receive reports and metrics to make better decisions.
               </p>
             </div>
@@ -463,10 +471,10 @@
           <div class="how-it-works-cta-content">
             <i class="bi bi-lightning-charge"></i>
             <div>
-              <h4>Start Free Now</h4>
-              <p>No credit card required. Cancel anytime.</p>
+              <h4 data-i18n="howItWorks.ctaTitle">Start Free Now</h4>
+              <p data-i18n="howItWorks.ctaDesc">No credit card required. Cancel anytime.</p>
             </div>
-            <a href="#pricing" class="btn btn-success">Create Free Account</a>
+            <a href="#pricing" class="btn btn-success" data-i18n="howItWorks.ctaTitle">Create Free Account</a>
           </div>
         </div>
       </div>
@@ -477,10 +485,10 @@
         <div class="section-header">
           <span class="section-subtitle">
             <i class="bi bi-tag"></i>
-            Flexible Plans
+            <span data-i18n="pricing.subtitle">Flexible Plans</span>
           </span>
-          <h2 class="section-title">Choose the ideal plan for you</h2>
-          <p class="section-description">
+          <h2 class="section-title" data-i18n="pricing.title">Choose the ideal plan for you</h2>
+          <p class="section-description" data-i18n="pricing.description">
             No hidden costs. Cancel anytime. Start free today.
           </p>
         </div>
@@ -490,138 +498,138 @@
               <div class="pricing-icon">
                 <i class="bi bi-sun"></i>
               </div>
-              <h3 class="pricing-title">Basic</h3>
-              <p class="pricing-description">
+              <h3 class="pricing-title" data-i18n="pricing.basic">Basic</h3>
+              <p class="pricing-description" data-i18n="pricing.basicDesc">
                 Perfect to start digitizing your livestock
               </p>
             </div>
             <div class="pricing-price">
               <span class="currency">$</span>
               <span class="amount">0</span>
-              <span class="period">/month</span>
+              <span class="period" data-i18n="pricing.period">/month</span>
             </div>
-            <span class="pricing-price-note">Free forever</span>
+            <span class="pricing-price-note" data-i18n="pricing.freeForever">Free forever</span>
             <ul class="pricing-features">
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Up to <strong>50 animals</strong></span>
+                <span data-i18n="pricing.upTo50">Up to <strong>50 animals</strong></span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Basic animal registration</span>
+                <span data-i18n="pricing.basicReg">Basic animal registration</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Simple vaccine alerts</span>
+                <span data-i18n="pricing.simpleAlerts">Simple vaccine alerts</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Basic web access</span>
+                <span data-i18n="pricing.basicWeb">Basic web access</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Email support</span>
+                <span data-i18n="pricing.emailSupport">Email support</span>
               </li>
             </ul>
-            <a href="#" class="btn btn-outline pricing-btn">Start Free</a>
+            <a href="#" class="btn btn-outline pricing-btn" data-i18n="pricing.startFree">Start Free</a>
           </div>
           <div class="pricing-card featured">
             <div class="pricing-badge">
               <i class="bi bi-star-fill"></i>
-              Most Popular
+              <span data-i18n="pricing.mostPopular">Most Popular</span>
             </div>
             <div class="pricing-header">
               <div class="pricing-icon">
                 <i class="bi bi-cloud-sun"></i>
               </div>
-              <h3 class="pricing-title">Professional</h3>
-              <p class="pricing-description">
+              <h3 class="pricing-title" data-i18n="pricing.professional">Professional</h3>
+              <p class="pricing-description" data-i18n="pricing.profDesc">
                 For ranchers looking for productivity
               </p>
             </div>
             <div class="pricing-price">
               <span class="currency">$</span>
               <span class="amount">19</span>
-              <span class="period">/month</span>
+              <span class="period" data-i18n="pricing.period">/month</span>
             </div>
-            <span class="pricing-price-note"
+            <span class="pricing-price-note" data-i18n="pricing.save"
               >Save $228/year with annual billing</span
             >
             <ul class="pricing-features">
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Up to <strong>500 animals</strong></span>
+                <span data-i18n="pricing.upTo500">Up to <strong>500 animals</strong></span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Advanced records with photos</span>
+                <span data-i18n="pricing.advancedReg">Advanced records with photos</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Reporting and dashboards</span>
+                <span data-i18n="pricing.reports">Reporting and dashboards</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Full mobile app</span>
+                <span data-i18n="pricing.fullMobile">Full mobile app</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Priority support</span>
+                <span data-i18n="pricing.prioritySupport">Priority support</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Automatic alerts</span>
+                <span data-i18n="pricing.autoAlerts">Automatic alerts</span>
               </li>
             </ul>
-            <a href="#" class="btn btn-success pricing-btn">Choose Plan</a>
+            <a href="#" class="btn btn-success pricing-btn" data-i18n="pricing.choosePlan">Choose Plan</a>
           </div>
           <div class="pricing-card">
             <div class="pricing-header">
               <div class="pricing-icon">
                 <i class="bi bi-lightning-charge"></i>
               </div>
-              <h3 class="pricing-title">Enterprise</h3>
-              <p class="pricing-description">For large-scale operations</p>
+              <h3 class="pricing-title" data-i18n="pricing.enterprise">Enterprise</h3>
+              <p class="pricing-description" data-i18n="pricing.entDesc">For large-scale operations</p>
             </div>
             <div class="pricing-price">
               <span class="currency">$</span>
               <span class="amount">49</span>
-              <span class="period">/month</span>
+              <span class="period" data-i18n="pricing.period">/month</span>
             </div>
-            <span class="pricing-price-note"
+            <span class="pricing-price-note" data-i18n="pricing.perHerd"
               >Price per herd up to 5,000 animals</span
             >
             <ul class="pricing-features">
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span><strong>Unlimited animals</strong></span>
+                <span data-i18n="pricing.unlimited"><strong>Unlimited animals</strong></span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Multiple users and roles</span>
+                <span data-i18n="pricing.multiUser">Multiple users and roles</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Full API access</span>
+                <span data-i18n="pricing.apiAccess">Full API access</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Field customization</span>
+                <span data-i18n="pricing.customization">Field customization</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>24/7 dedicated support</span>
+                <span data-i18n="pricing.support24_7">24/7 dedicated support</span>
               </li>
               <li>
                 <i class="bi bi-check-circle-fill"></i>
-                <span>Training included</span>
+                <span data-i18n="pricing.training">Training included</span>
               </li>
             </ul>
-            <a href="#" class="btn btn-outline pricing-btn">Contact Sales</a>
+            <a href="#" class="btn btn-outline pricing-btn" data-i18n="pricing.contactSales">Contact Sales</a>
           </div>
         </div>
         <div class="pricing-footer">
-          <p>
+          <p data-i18n="pricing.encryption">
             <i class="bi bi-shield-check"></i>
             All plans include data encryption and automatic backup
           </p>
@@ -637,7 +645,7 @@
               <img src="assets/images/logo.png" alt="AniTec Logo" />
               <span class="logo-text">AniTec</span>
             </a>
-            <p class="footer-description">
+            <p class="footer-description" data-i18n="footer.desc">
               AniTec is the leading digital platform in Latin America for
               livestock management. We help small and medium producers and
               veterinarians optimize their operations with innovative and
@@ -652,43 +660,44 @@
             </div>
           </div>
           <div class="footer-column">
-            <h4 class="footer-title">Product</h4>
+            <h4 class="footer-title" data-i18n="footer.product">Product</h4>
             <ul class="footer-links">
-              <li><a href="#features">Features</a></li>
-              <li><a href="#pricing">Pricing</a></li>
-              <li><a href="ganaderos.html">For Ranchers</a></li>
-              <li><a href="veterinarios.html">For Veterinarians</a></li>
+              <li><a href="#features" data-i18n="footer.features">Features</a></li>
+              <li><a href="#pricing" data-i18n="footer.pricing">Pricing</a></li>
+              <li><a href="ganaderos.html" data-i18n="footer.forRanchers">For Ranchers</a></li>
+              <li><a href="veterinarios.html" data-i18n="footer.forVets">For Veterinarians</a></li>
             </ul>
           </div>
           <div class="footer-column">
-            <h4 class="footer-title">Company</h4>
+            <h4 class="footer-title" data-i18n="footer.company">Company</h4>
             <ul class="footer-links">
-              <li><a href="nosotros.html">About Us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="nosotros.html" data-i18n="footer.about">About Us</a></li>
+              <li><a href="#" data-i18n="footer.blog">Blog</a></li>
+              <li><a href="#contact" data-i18n="footer.contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-column">
-            <h4 class="footer-title">Support</h4>
+            <h4 class="footer-title" data-i18n="footer.support">Support</h4>
             <ul class="footer-links">
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Documentation</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Community</a></li>
+              <li><a href="#" data-i18n="footer.helpCenter">Help Center</a></li>
+              <li><a href="#" data-i18n="footer.documentation">Documentation</a></li>
+              <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+              <li><a href="#" data-i18n="footer.community">Community</a></li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <p class="footer-copyright">© 2026 AniTec. All rights reserved.</p>
+          <p class="footer-copyright" data-i18n="footer.copyright">© 2026 AniTec. All rights reserved.</p>
           <div class="footer-legal">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookies</a>
+            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="#" data-i18n="footer.terms">Terms of Service</a>
+            <a href="#" data-i18n="footer.cookies">Cookies</a>
           </div>
         </div>
       </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
